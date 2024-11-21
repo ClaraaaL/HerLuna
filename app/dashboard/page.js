@@ -1,7 +1,10 @@
 import { Main } from "@/components/Main";
+import {Login} from "@/components/Login";
+import {Dashboard} from "@/components/Dashboard";
+
 
 export const metadata = {
-    title: "Broodl ⋅ Dashboard",
+    title: "HerLuna ⋅ Dashboard",
     
   };
 
