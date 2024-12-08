@@ -6,7 +6,7 @@ import { useAuth } from "@/context/AuthContext";
 import { setDoc, doc, sum } from "firebase/firestore";
 import { db } from "@/firebase";
 import Login from "@/components/Login";
-import Loading from "./Loading";
+import DailyQuote from "./DailyqQuote";
 
 const fugaz = Fugaz_One({ subsets: ["latin"], weight: ["400"] });
 
@@ -147,6 +147,7 @@ export default function Dashboard() {
         })}
       </div>
       <Calendar completeData={data} handleSetBlood={handleSetBlood} />
+      <DailyQuote />
     </div>
   );
 }
