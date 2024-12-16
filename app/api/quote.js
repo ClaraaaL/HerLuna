@@ -8,7 +8,7 @@ async function Quote() {
     // Check if the joke is single-part or two-part
     if (response.data.type === 'single') {
       console.log(response.data.joke);  // Single-part joke
-    } else if (response.data.type === 'twopart') {
+    } else if (response.data.type === 'twoPart') {
       console.log(response.data.setup);  // Setup of the two-part joke
       console.log(response.data.delivery);  // Delivery of the two-part joke
     }
