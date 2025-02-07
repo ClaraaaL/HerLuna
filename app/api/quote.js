@@ -13,7 +13,7 @@ async function Quote() {
       console.log(response.data.delivery);  // Delivery of the two-part joke
     }
   } catch (error) {
-    console.error("获取引言时出错: ", error);
+    console.error("cannot get sentences: ", error);
   }
 }
 
