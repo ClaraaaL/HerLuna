@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-/* eslint-disable react/no-unescaped-entities */
+
 
 
 export default function DailyQuote() {
@@ -29,7 +29,7 @@ export default function DailyQuote() {
 
   return (
     <div className="daily-quote text-center">
-      <p className="quote text-center">'{quote}'</p>
+      <p className="quote text-center">{quote}</p>
       {author && <p className="author text-center">- {author}</p>}{" "}
       {/* Show the author if it's available */}
     </div>
