@@ -16,7 +16,8 @@ export default function DailyQuote() {
 
         // Handle both single and two-part jokes
         if (response.data.type === "single") {
-          setQuote(response.data.joke); // Set the single joke
+          setQuote(response.data.joke);// Set the single joke
+          setAuthor(""); 
         } else if (response.data.type === "twopart") {
           setQuote(response.data.setup); // Set the setup for two-part jokes
           setAuthor(response.data.delivery); // Set the delivery as the 'author'
@@ -29,7 +30,7 @@ export default function DailyQuote() {
 
   return (
     <div className="daily-quote text-center">
-      <p className="quote text-center">"{quote}"</p>
+      <p className="quote text-center">{'"' + quote + '"'}</p>
       {author && <p className="author text-center">- {author}</p>}{" "}
       {/* Show the author if it's available */}
     </div>
